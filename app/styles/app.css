@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital@1&display=swap");
+
 html,
 body {
   padding: 0;
@@ -6,6 +8,15 @@ body {
 
 .container {
   background-color: aliceblue;
+}
+
+.header {
+  height: 30px;
+  text-align: center;
+}
+
+.header-title {
+  font-family: "Bebas Neue", cursive;
 }
 
 .menu {
@@ -35,7 +46,6 @@ body {
 }
 
 .search {
-  background-color: #dcdcdc5e;
   height: 125px;
   display: flex;
   align-items: center;
@@ -43,11 +53,42 @@ body {
   flex-direction: column;
 }
 
+.search-header {
+  font-family: "Noto Serif", serif;
+  text-align: center;
+}
+
+.search-box {
+  position: relative;
+}
+
 .search-input {
   width: 250px;
   border: none;
   border-radius: 50px;
   height: 30px;
+  padding: 5px 0px 5px 10px;
+  color: #000;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  border: none;
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  color: lightgray;
+  bottom: 5%;
+  right: 2%;
+  font-size: 22px;
+  border-radius: 20px;
+}
+
+.search-button:focus {
+  outline: none;
 }
 
 .movies {
@@ -91,4 +132,10 @@ body {
   color: #fff;
   background-color: background-color;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  .movies {
+    justify-content: center;
+  }
 }
