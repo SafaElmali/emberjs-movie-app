@@ -1,0 +1,15 @@
+<div class="search">
+    <h4>Search For Popular Movies!</h4>
+    <input class="search-input" />
+</div>
+
+<div class="movies">
+    {{#each @model.results as |movie|}}
+    <div class="movies-item">
+        {{!-- <span>Popularity</span> {{movie.popularity}} --}}
+        <img src="https://image.tmdb.org/t/p/w154/{{movie.poster_path}}" alt="{{movie.original_title}}" />
+    </div>
+    {{/each}}
+</div>
+
+<Footer />

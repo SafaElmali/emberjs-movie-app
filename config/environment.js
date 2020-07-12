@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'movie-app',
     environment,
@@ -46,6 +46,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+
+  ENV.MOVIEDB_API_KEY = '4c841da0136ef16f1351dea742911646';
 
   return ENV;
 };
