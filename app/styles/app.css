@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background-color: aliceblue;
+  background-color: #fff;
 }
 
 .header {
@@ -20,7 +20,7 @@ body {
 }
 
 .menu {
-  background-color: #042541;
+  background-color: #1d1d1d;
   display: flex;
   align-items: center;
 }
@@ -93,7 +93,7 @@ body {
 
 .movies {
   display: flex;
-  flex-wrap: c;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 20px;
 }
