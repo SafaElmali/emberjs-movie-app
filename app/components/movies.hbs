@@ -11,7 +11,7 @@
 {{yield}}
 
 <div class="movies">
-    {{#each this.movies key="id" as |movie|}}
+    {{#each this.movies as |movie|}}
     {{#if movie.poster_path}}
     <div class="movies-item">
         <img src="https://image.tmdb.org/t/p/w154/{{movie.poster_path}}" alt="{{movie.original_title}}" />
