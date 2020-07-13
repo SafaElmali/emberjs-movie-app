@@ -1,16 +1,5 @@
-<Search />
-
-<div class="header">
-    <h1 class="header-title">Popular Movies</h1>
-</div>
-
-<div class="movies">
-    {{#each @model.results as |movie|}}
-    <div class="movies-item">
-        {{!-- <span>Popularity</span> {{movie.popularity}} --}}
-        <img src="https://image.tmdb.org/t/p/w154/{{movie.poster_path}}" alt="{{movie.original_title}}" />
+<Movies>
+    <div class="header">
+        <h1 class="header-title">Popular Movies</h1>
     </div>
-    {{/each}}
-</div>
-
-<Footer />
+</Movies>

@@ -1,0 +1,25 @@
+<div class="search">
+    <div class="search-box">
+        <h4 class="search-header">search for a movie</h4>
+        <input value={{this.value}} {{on "change" this.updateValue}} class="search-input" placeholder="search movie" />
+        <button class="search-button" type="button" {{on "click" this.handleClick}}>
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</div>
+
+{{yield}}
+
+<div class="movies">
+    {{#each this.movies key="id" as |movie|}}
+    {{#if movie.poster_path}}
+    <div class="movies-item">
+        <img src="https://image.tmdb.org/t/p/w154/{{movie.poster_path}}" alt="{{movie.original_title}}" />
+    </div>
+    {{/if}}
+    {{/each}}
+</div>
+
+<div class="footer">
+    <button type="button" class="footer-button" {{on "click" this.fetchPopularMovies}}>Load More</button>
+</div>
