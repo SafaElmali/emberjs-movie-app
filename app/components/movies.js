@@ -2,7 +2,6 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import ENV from 'movie-app/config/environment';
-
 import fetch from 'fetch';
 
 const POPULAR_MOVIES = `https://api.themoviedb.org/3/movie/popular?api_key=${ENV.MOVIEDB_API_KEY}&language=en-US`
