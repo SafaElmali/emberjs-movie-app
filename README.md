@@ -1,7 +1,12 @@
 # movie-app
 
+![Screenshot 2020-10-04 at 9 31 21 AM](https://user-images.githubusercontent.com/17435062/95008683-a282c300-0624-11eb-8371-33bbda6fbce5.png)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
+
+# Preview
+<p>You can preview this project from here 👉 <a href="https://emberjs-movie-app.vercel.app/">Preview</a>
 
 ## Prerequisites
 
@@ -47,6 +52,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 Specify what it takes to deploy your app.
+
+### License
+
+emberjs-movie-app is [MIT licensed](./LICENSE).
 
 ## Further Reading / Useful Links
 
